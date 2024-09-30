@@ -1,0 +1,101 @@
+.block {
+  border: 1px solid red;
+  color: black !important;
+  background-color: white;
+  width: 10px;
+  height: 10px;
+  display: grid;
+  place-content: center;
+}
+.block-mod {
+  width: 300px;
+  height: 100px;
+}
+
+.bg-orange {
+  background-color: orange;
+}
+
+/* Для лічильника */
+.counter {
+  display: inline-grid;
+  grid-template-columns: 100px auto;
+  border: 2px solid black;
+}
+
+.counter-input {
+  grid-row: 1/3;
+  font-size: 52px;
+  text-align: center;
+  border: 2px solid black;
+  outline: none;
+}
+
+.counter-btn-increment,
+.counter-btn-descrement {
+  font-size: 36px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  padding: 12px;
+  border: 2px solid black;
+  transition: 0.4s;
+  font-weight: 700;
+  line-height: 1;
+}
+
+.counter-btn-increment {
+  background-color: rgb(70, 207, 70);
+}
+
+.counter-btn-increment:hover {
+  background-color: rgb(45, 139, 45);
+}
+
+.counter-btn-descrement {
+  background-color: rgb(241, 82, 82);
+}
+
+.counter-btn-descrement:hover {
+  background-color: rgb(182, 63, 63);
+}
+
+/* Дизайн блоків кольору */
+.block-color {
+  display: grid;
+  width: 80%;
+  gap: 16px;
+  margin: 0 auto;
+}
+
+.block-color__items {
+  display: grid;
+  grid-template-columns: repeat(auto-fill, minmax(50px, 1fr));
+  gap: 16px;
+}
+
+.block-color__item {
+  height: 50px;
+  cursor: pointer;
+}
+
+/* Стиль для форми і нотаток */
+.text-bg-secondary {
+  background-color: #e9ecef;
+}
+
+.text-bg-warning {
+  background-color: #ffc107;
+}
+
+.text-bg-primary {
+  background-color: #0d6efd;
+}
+
+.text-decoration-line-through {
+  text-decoration: line-through;
+}
+
+.text-success {
+  color: #28a745 !important;
+}

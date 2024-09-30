@@ -1,0 +1,53 @@
+<!DOCTYPE html>
+<html lang="ru">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <meta http-equiv="X-UA-Compatible" content="ie=edge" />
+    <title>JS - project</title>
+    <link rel="stylesheet" href="css/bootstrap.min.css" />
+    <link rel="stylesheet" href="css/style.css" />
+    <script src="js/bootstrap.bundle.min.js" defer></script>
+    <script src="js/app.js" type="module" defer></script>
+  </head>
+  <body class="bg-dark">
+    <div class="container py-5 px-3 text-bg-info min-vh-100">
+      <h1 class="h1 text-danger mb-3 w-75 mx-auto">Мої замітки</h1>
+      <form
+        class="w-75 mx-auto mb-3 text-warning bg-dark p-3 rounded"
+        id="form-note"
+      >
+        <div class="mb-2">
+          <label for="noteText" class="form-label d-none"
+            >Введіть свою замітку</label
+          >
+          <input
+            type="text"
+            class="form-control"
+            id="noteText"
+            name="noteText"
+            placeholder="Введіть свою замітку..."
+          />
+        </div>
+        <div class="mb-4">
+          <label for="important" class="form-label">Рівень важливості:</label>
+          <select class="form-select w-50" id="important" name="important">
+            <option value="1">Низький</option>
+            <option value="2">Середній</option>
+            <option value="3">Високий</option>
+          </select>
+        </div>
+        <button
+          id="createNote"
+          type="button"
+          class="btn btn-outline-success w-100"
+        >
+          Додати замітку
+        </button>
+      </form>
+      <section class="w-75 mx-auto">
+        <ul class="list-group" id="list"></ul>
+      </section>
+    </div>
+  </body>
+</html> 
